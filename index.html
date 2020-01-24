@@ -1,1 +1,72 @@
-<h1>Hello Word</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='./js/jquery.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--<link rel='stylesheet' type='text/css' href="./css/style.css">-->
+    <link rel='stylesheet' type='text/css' href="./css/style-home.css">
+    <link rel='stylesheet' type='text/css' href="./css/publicstyle.css">
+    
+    <!--
+    <link rel='stylesheet' type='text/css' href="./css/button.css">
+    <link rel='stylesheet' type='text/css' href="./css/layout.css">
+    <link rel='stylesheet' type='text/css' href="./css/loadstyle.css">
+    <link rel='stylesheet' type='text/css' href="./css/publicstyle.css">
+    <link rel='stylesheet' type='text/css' href="./css/comments-area.css">
+    <link rel='stylesheet' type='text/css' href="./css/premium-area.css">
+    -->
+
+    <title>SORTEIOCOM</title>
+</head>
+<body>
+
+    <div class='sorteio-area'>
+            <div class='header-menu'>
+                <img src="./img/logo1.png" class='logo'>
+                <button onClick='' class='login btn btn-outline-light'>LOGIN</button>
+            </div>
+
+            <div class='layout-area'>
+                <!--
+                    layout-1.html
+                    layout-2.hmtl
+                    layout-3.html
+                -->
+            </div>
+    </div>
+    <!--<div class='premium-area'></div>-->
+
+    <script src='./js/getinfo.js'></script>
+    <script src='./js/loadpage.js'></script>
+    <script>
+    $(".layout-area").load('layout-1.html');  
+    </script>
+
+<!--
+<?php
+function generate_sig($endpoint, $params, $secret) {
+  $sig = $endpoint;
+  ksort($params);
+  foreach ($params as $key => $val) {
+    $sig .= "|$key=$val";
+  }
+  return hash_hmac('sha256', $sig, $secret, false);
+}
+
+$endpoint = '/media/657988443280050001_25025320';
+$params = array(
+  'access_token' => 'fb2e77d.47a0479900504cb3ab4a1f626d174d2d',
+  'count' => 10,
+);
+$secret = '6dc1787668c64c939929c17683d7cb74';
+
+$sig = generate_sig($endpoint, $params, $secret);
+echo $sig;
+?>
+-->
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!--
+Instagram API videos
+https://www.youtube.com/watch?v=Wn5ur1PYfio&list=PL0glhsZ01I-AsN7PRMNWH9X9XJKVpGSWJ
+https://www.youtube.com/watch?v=M7FMnK9am3g&list=PL0glhsZ01I-BAFwPmQBWMNqUDnkSlOR6r
+
+Facebook developer
+https://developers.facebook.com/apps/2313410648763367/dashboard/
+
+Old instagram API
+https://www.instagram.com/developer/secure-api-requests/
+
+Instagram API Endpoints
+
+Get the acess token [access_token]
+
+Get the information of a profile [access_token]
+https://api.instagram.com/v1/users/self/media/recent/?access_token=ACCESS-TOKEN
+
+Get the recent comments of a media
+https://api.instagram.com/v1/media/{media-id}/comments?access_token=ACCESS-TOKEN
+
+Get the jpg thumb of mdeia
+https://instagram.com/p/fA9uwTtkSN/media/?size=m
+https://instagram.com/p/fA9uwTtkSN/media/?size=t
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //const Http = new XMLHttpRequest();
+        var ig_exchange_token='';
+        var instagram_app_secret='';
+        var shortlived_access_token='';
+        const url='https://graph.instagram.com/access_token?grant_type='+ig_exchange_token+'&client_secret={'+instagram_app_secret+'}&access_token={'+shortlived_access_token+'}';
+        /*Http.open('GET',url);
+        Http.send();
+
+        Http.onreadystatechange=(e)=>{
+            console.log(Http.responseText)
+        }*/
+        $.get(url,function(data,status){
+            console.log(data)
+        })    
+
+
+        $.get( "assets/api/apiv2.php?info=instagram.com/p/"+shortcode+'&login='+login+'&startl='+startLogin, function( data ) {
+         if (data!=false) {
+          author = data.author_name;
+          ip = data.ip;
+          thumbnail_url = 'https://instagram.com/p/'+shortcode+'/media/?size=m';
+            $('.foto-info').attr('src', thumbnail_url);
+          showOnly("v4");
+          $('.v4-user').html(data.author_name);
+          $('.v4-comments').html("");
+          $('.v4-tempo-estimado').html("");
+       } else {
+        $('.err-title').html("Erro ao carregar a foto");
+        $('.err-subtitle').html('Ocorreu um erro ao carregar as informaÃ§Ãµes da foto.');
+        showOnly("verr");
+      }
+    });
+
+    </script>
+
+</body>
+</html>

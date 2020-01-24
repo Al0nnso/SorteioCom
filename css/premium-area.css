@@ -1,0 +1,8 @@
+.premium-area{
+    display: block;
+    position: absolute;
+    background-color: #f2f2f2;
+    top: 100%;
+    height: 1000px;
+    width: 100%;
+}

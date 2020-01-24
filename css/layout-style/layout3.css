@@ -1,0 +1,195 @@
+
+/*Components*/
+
+/*
+branco #f2f2f2
+preto #242540
+verde1 #04bf68
+verde2 #0b8c68
+*/
+html{
+    overflow-y: hidden;
+}
+.layout-3{
+    overflow: hidden;
+}
+.loadcomments-area{
+    position: absolute;
+    text-align: left;
+    background-color: beige;
+    top: 25%;
+    border-radius: 20px;
+    /*visibility: hidden;*/
+    left: 15%;
+    right: 15%;
+    right: 20%;
+    width: 70%;
+    z-index: 4;
+    height: 20%;
+    overflow-y: scroll;
+    /*transition: all .4s ease-in-out;*/
+    /*opacity: 0;*/
+}.colortransition-object{
+    position: absolute;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+    left: 50%;
+    top: 50%;
+    visibility: hidden;
+    /*right: 50%;*/
+    transform: translate(-50%, -50%);
+    background-color: #181927;
+    width: 0px;
+    height: 0px;
+    z-index: 2;
+    /*background-color: aliceblue;*/
+    /*background-image: linear-gradient(to bottom, #04bf68, #0b8c68);*/
+    /*background-color: #1d1e31;*/
+}.sortear-box{
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+
+    /*transition: all .4s ease-in-out;*/
+    width: 1150px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #1d1e31;
+    /*opacity: 0;
+    visibility: hidden;*/
+    /*display: none;*/
+    z-index: 7;
+}
+.btsortear{
+    position: absolute;
+    /*transition: all .4s ease-in-out;*/
+    top: 46%;
+    transform: translate(-50%, -50%);
+    /*width: 20%;*/
+    z-index: 7;
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 22pt;
+    background-color: #04bf68;
+}.btsortear:hover{
+    background-color: #00a759;
+}
+.winner-div{
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 46%;
+    top: 53%;
+    background-color: #181927;
+}
+.winner-area{
+    text-align: center;
+    position: relative;
+    /*top: 60%;*/
+    top: 75px;
+    margin-left: 20%;
+    width: 60%;
+    height: 69%;
+    overflow-y: auto;
+    
+}.winner-box{
+    margin-top: 5px;
+    padding-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    color: #f2f2f2;
+    background-color: #38395a;
+}.winner-title{
+    position: absolute;
+    /*ransform: translate(-50%, -50%);*/
+    /*left: 50%;
+    right: 50%;*/
+    /*top: -80px;*/
+    width: 100%;
+    text-align: center;
+    font-size: 21pt;
+    /*top: 50.5%;*/
+    color: #f2f2f2;
+    font-weight: 400;
+}/*.layout-background{
+    position: absolute;
+    transition: all .4s ease-in-out;
+    left: 49.5%;
+    top: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background: url(../../img/background-flow-sorteio.jpg);
+    width: 101%;
+    height: 100%;
+    z-index: 3;
+}*/
+.selected-post-icon{
+    position: absolute;
+    top: 25px;
+    /*right: 68%;*/
+    left: 15%;
+    border-radius:10px;
+    /*width: auto;
+    height: auto;*/
+    width: 150px;
+    height: 150px;
+    /*background-color: #f2f2f2;*/
+    /*background-image: url(../../img/testimg.jpg);*/
+}.sorteio-area{
+    /*background-image: url(../../img/background-flow-sorteio.jpg);*/
+    background-color: brown;
+}
+.load-status{
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    width: 100%;
+    color:#f2f2f2;
+    font-size: 25pt;
+}.info-sorteio{
+    position: absolute;
+    text-align: left;
+    left: 30%;
+    top: 40px;
+    color:#f2f2f2;
+    font-size: 21pt;
+
+}.name-title{
+    font-size: 22pt;
+    line-height: 30px;
+}
+.count-comments{
+    /*line-height: 1px;*/
+    font-size: 15pt;
+    
+}.loaded-comments{
+    font-size: 15pt;
+    font-weight: 100;
+}
+
+
+@media screen and (min-width:768px){
+    /*Computer*/
+
+}
+
+@media all and (max-width:900px){
+    /*Smartphone*/
+
+
+}@media all and (max-height:768px) and (orientation : landscape){
+    /*Smartphone Horizontal*/
+
+}
+@media screen and (min-width:700px) and (max-width:1000px){
+    /*Tablet*/
+
+}
