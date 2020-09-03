@@ -9,8 +9,8 @@
 <p align="center">A website app to make instagram giveaways</p>
 
 <p align="center">
-  <img src="/docs/home.png" width=470 title="Login">
-  <img src="/docs/sorteio.png" width=470 title="Login">
+  <img src="/docs/home.png" width=480 title="Login">
+  <img src="/docs/sorteio.png" width=480 title="Login">
 </p>
 
 ## Features
@@ -27,10 +27,10 @@ All app functions
 
 ## Giveaway
 <p align="center">
-  <img src="/docs/gifs/sortear_video.gif" title="Login">
+  <img src="/docs/gifs/sortear_video.gif" title="Giveaway">
 </p>
 
 ## Download Excel
 <p align="center">
-  <img src="/docs/gifs/sortear_table_video.gif" title="Login">
+  <img src="/docs/gifs/sortear_table_video.gif" title="Download Table">
 </p>
