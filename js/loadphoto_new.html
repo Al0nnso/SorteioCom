@@ -12,6 +12,10 @@ https://www.instagram.com/developer/secure-api-requests/
 Instagram API Endpoints
 
 Get the acess token [access_token]
+GET https://graph.instagram.com/access_token
+  ?grant_type=ig_exchange_token
+  &client_secret={instagram-app-secret}
+  &access_token={short-lived-access-token}
 
 Get the information of a profile [access_token]
 https://api.instagram.com/v1/users/self/media/recent/?access_token=ACCESS-TOKEN

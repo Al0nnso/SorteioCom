@@ -93,7 +93,7 @@ function getjson(url){
                             var comments='disabled'
                         }
                         //var post_html= '<div class="photopreview"><img class="postimg" src="'+ post_url +'"><div class="photoinfo noselect">  '+likes+' '+comments+'</div></dvi>'
-                        var post_html= '<div class="photopreview" id="'+postid+'" onclick="selectphoto(`'+shortcode+'`,`'+postid+'`)"><img class="postimg" src="'+ post_url +'"><div id="info-'+postid+'" ></div><div class="photoinfo noselect" >'+comments+'</div></dvi>'
+                        var post_html= '<div class="photopreview" urlid="'+post_url+'" style="background-image:url('+ post_url+')" id="'+postid+'" onclick="selectphoto(`'+shortcode+'`,`'+postid+'`)"><div id="info-'+postid+'" ></div><div class="photoinfo noselect" >'+comments+'</div></dvi>'
                         //var post_html= '<img class="postimg" src="'+ post_url +'">'
                         console.log(post_html)
                         $('.img-grid').append(post_html)

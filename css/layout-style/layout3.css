@@ -21,12 +21,12 @@ html{
     border-radius: 20px;
     /*visibility: hidden;*/
     left: 15%;
-    right: 15%;
     right: 20%;
     width: 70%;
     z-index: 4;
     height: 20%;
     overflow-y: scroll;
+    padding-left: 20px;
     /*transition: all .4s ease-in-out;*/
     /*opacity: 0;*/
 }.colortransition-object{
@@ -77,6 +77,8 @@ html{
     border-radius: 10px;
     font-size: 22pt;
     background-color: #04bf68;
+    font-weight: bold;
+    color: #242540;
 }.btsortear:hover{
     background-color: #00a759;
 }
@@ -103,7 +105,8 @@ html{
     padding-top: 20px;
     border-radius: 10px;
     width: 100%;
-    height: 60px;
+    /*height: 60px;*/
+    padding: 14px;
     color: #f2f2f2;
     background-color: #38395a;
 }.winner-title{
@@ -133,19 +136,21 @@ html{
 }*/
 .selected-post-icon{
     position: absolute;
-    top: 25px;
     /*right: 68%;*/
-    left: 15%;
+    left: 0px;
     border-radius:10px;
     /*width: auto;
     height: auto;*/
     width: 150px;
     height: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-size: 151px;*/
     /*background-color: #f2f2f2;*/
     /*background-image: url(../../img/testimg.jpg);*/
 }.sorteio-area{
     /*background-image: url(../../img/background-flow-sorteio.jpg);*/
-    background-color: brown;
+    /*background-color: brown;*/
 }
 .load-status{
     position: absolute;
@@ -157,10 +162,10 @@ html{
 }.info-sorteio{
     position: absolute;
     text-align: left;
-    left: 30%;
-    top: 40px;
     color:#f2f2f2;
     font-size: 21pt;
+    margin-left: 150px;
+    width: 200px;
 
 }.name-title{
     font-size: 22pt;
@@ -173,6 +178,15 @@ html{
 }.loaded-comments{
     font-size: 15pt;
     font-weight: 100;
+}header{
+    position: absolute;
+    padding: 30px;
+    /*left: 170px;*/
+    left: 15%;
+}td{
+    float: left;
+}.c_number{
+    visibility: hidden;
 }
 
 
@@ -181,11 +195,22 @@ html{
 
 }
 
-@media all and (max-width:900px){
+@media all and (max-width:1150px){
+    .sortear-box{
+        width: 100%;
+        height: 100%;
+    }/*header{
+    position: absolute;
+    padding: 20px;
+    }*/
+
+}@media all and (max-width:500px){
     /*Smartphone*/
 
 
-}@media all and (max-height:768px) and (orientation : landscape){
+}
+
+@media all and (max-height:768px) and (orientation : landscape){
     /*Smartphone Horizontal*/
 
 }

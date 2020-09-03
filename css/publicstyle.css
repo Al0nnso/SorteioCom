@@ -13,6 +13,9 @@ html,body{
 h2{
     font-family: 'Montserrat', sans-serif;
 }
+.font{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .noselect{
     -webkit-touch-callout: none; /* iOS Safari */
@@ -28,6 +31,11 @@ h2{
     -ms-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
+}.degrade{
+    background-color: #01B463;
+    -webkit-box-shadow: inset 0px 0px 150px 60px #009367;
+    -moz-box-shadow: inset 0px 0px 150px 60px #009367;
+    box-shadow: inset 0px 0px 150px 60px #009367;
 }
 .scroll::-webkit-scrollbar
 {
@@ -41,4 +49,10 @@ h2{
     /*-webkit-box-shadow: outset 0 0 6px rgba(0,0,0,0.3);*/
     background-color: #505279;
     border-radius: 10px;
+}.btn1{
+    background-color: #04bf68;
+    font-weight: bold;
+    color: #242540;
+}.btn1:hover{
+    background-color: #00a759;
 }

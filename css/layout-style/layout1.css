@@ -1,118 +1,124 @@
 
 /*Components*/
-.layout-1{
-   /*position: absolute;*/
-    /*display: block;*/
-    /*background-color: aquamarine;*/
-    width: 100%;
-    height: 100%;
-
-}.central-box{
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    color: #f2f2f2;
-}/*.btsubmit {
-    visibility: hidden;
-    position: absolute;
-    margin-left: 45%;
-    margin-right: auto;
-    top: -50px;
-    transition: all .2s;
-    position: relative;
+html,body{
     overflow: hidden;
-    width: 70px;
-    height: 70px;
-    background-color: #f2f2f200;
-    font-size: 40pt;
-    color: #2425407c;
-}*/#toggle {
-    font-weight: bold;
-    color: #242540;
 }
-
-@media screen and (min-width:600px){
-    /*Computer*/
-    .central-box{
-        /*-webkit-transition: all .2s;
-        transition: all .2s;*/
-        height: 400px;
-        /*margin-top: 250px;*/
-        background-color: brown;
-    }
-    .title{
-        font-size: 70pt;
-    }.subtitle{
-        font-size: 30pt;
-    }.btsorteio{
-        font-size: 25pt;
-        width: 320px;
-        height: 70px;
-    }
-}
-
-@media all and (max-width:600px){
-    /*Smartphone*/
-    .central-box{
-        width: 100%;
-        height: 300px;
-        /*margin-top: 200px;*/
-        background-color: blue;
-    }
-    .title{
-        font-size: 45pt;
-        line-height: 60px;
-    }.subtitle{
-        font-size: 15pt;
-    }#toggle{
-        font-size: 20pt;
-        height: 60px;
-    }#buttonWithText {
-        top: 15px;
-        width: 210px; 
-    }.usrbt{
-        width: 200px;
-        height: 60px;
-    }.usrinput{
-        /*text-align: center;*/
-        font-size: 18pt;
-        width: 210px;
-        height: 60px;
-    }
-}@media all and (max-height:600px) and (orientation : landscape){
-    /*Smartphone Horizontal*/
-    .central-box{
-        width: 100%;
-        height: 300px;
-        /*margin-top: 80px;*/
-        background-color: aqua;
-    }
-    .title{
-        font-size: 45pt;
-        line-height: 60px;
-    }.subtitle{
-        font-size: 15pt;
-    }#toggle{
-        font-size: 20pt;
-        height: 60px;
-    }#buttonWithText {
-        top: 15px;
-        width: 210px; 
-    }.usrbt{
-        width: 200px;
-        height: 60px;
-    }.usrinput{
-        font-size: 18pt;
-        width: 210px;
-        height: 60px;
-    }
-}
-@media screen and (min-width:700px) and (max-width:1000px){
-    /*Tablet*/
-
-}
+.layout-1{
+    /*position: absolute;*/
+     /*display: block;*/
+     /*background-color: aquamarine;*/
+     width: 100%;
+     height: 100%;
+     
+ 
+ }.central-box{
+     text-align: center;
+     position: absolute;
+     width: 100%;
+     top: 35%;
+     left: 50%;
+     color: #f2f2f2;
+     transform: translate(-50%,-50%);
+     z-index: 3;
+     
+ }/*.btsubmit {
+     visibility: hidden;
+     position: absolute;
+     margin-left: 45%;
+     margin-right: auto;
+     top: -50px;
+     transition: all .2s;
+     position: relative;
+     overflow: hidden;
+     width: 70px;
+     height: 70px;
+     background-color: #f2f2f200;
+     font-size: 40pt;
+     color: #2425407c;
+ }*/#toggle {
+     font-weight: bold;
+     color: #242540;
+ }/*.login{
+     visibility: visible;
+ }*/
+ 
+ @media screen and (min-width:600px){
+     /*Computer*/
+     .central-box{
+         /*-webkit-transition: all .2s;
+         transition: all .2s;*/
+         height: 400px;
+         /*margin-top: 250px;*/
+         /*background-color: brown;*/
+     }
+     .title{
+         font-size: 70pt;
+     }.subtitle{
+         font-size: 30pt;
+     }.btsorteio{
+         font-size: 25pt;
+         width: 320px;
+         height: 70px;
+     }
+ }
+ 
+ @media all and (max-width:600px){
+     /*Smartphone*/
+     .central-box{
+         width: 100%;
+         height: 300px;
+         /*margin-top: 200px;*/
+         /*background-color: blue;*/
+     }
+     .title{
+         font-size: 45pt;
+         line-height: 60px;
+     }.subtitle{
+         font-size: 15pt;
+     }#toggle{
+         font-size: 20pt;
+         height: 60px;
+     }#buttonWithText {
+         top: 15px;
+         width: 210px; 
+     }.usrbt{
+         width: 200px;
+         height: 60px;
+     }.usrinput{
+         /*text-align: center;*/
+         font-size: 18pt;
+         width: 210px;
+         height: 60px;
+     }
+ }@media all and (max-height:600px) and (orientation : landscape){
+     /*Smartphone Horizontal*/
+     .central-box{
+         width: 100%;
+         height: 300px;
+         /*margin-top: 80px;*/
+         /*background-color: aqua;*/
+     }
+     .title{
+         font-size: 45pt;
+         line-height: 60px;
+     }.subtitle{
+         font-size: 15pt;
+     }#toggle{
+         font-size: 20pt;
+         height: 60px;
+     }#buttonWithText {
+         top: 15px;
+         width: 210px; 
+     }.usrbt{
+         width: 200px;
+         height: 60px;
+     }.usrinput{
+         font-size: 18pt;
+         width: 210px;
+         height: 60px;
+     }
+ }
+ @media screen and (min-width:700px) and (max-width:1000px){
+     /*Tablet*/
+ 
+ }

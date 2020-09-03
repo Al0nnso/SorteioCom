@@ -1,17 +1,20 @@
 <link rel='stylesheet' type='text/css' href="./css/layout-style/layout3.css">
+<script lang="javascript" src="./js/imports/xlsx.full.min.js"></script>
+<script lang="javascript" src="./js/imports/FileSaver.min.js"></script>
 <div class='layout-3'>
     <!--<h1 class='load-status'>Carregando comentarios...</h1>-->
     <div class='sortear-box opacity'>
         <header>
             <img class='selected-post-icon'/>
             <div class='info-sorteio'>
-                <h1 class='name-title'>alonnso_888</h1>
+                <h1 class='name-title'></h1>
                 <h2 class='count-comments'><b>0</b> comentários</h2>
                 <h2 class='loaded-comments'>0/min</h2>
+                <button class='btexcel btn btn1'>Baixar Tabela</button>
             </div>
         </header>
         <div class='loadcomments-area'>
-            <ul class='comment-list'>
+            <table class='comment-list' id='table'>
                 <!--<li>fgdsdfghfhgd</li>
                 <li>fgdsdfghfhgd</li>
                 <li>fgdsdfghfhgd</li>
@@ -19,11 +22,12 @@
                 <li>fgdsdfghfhgd</li>
                 <li>fgdsdfghfhgd</li>
                 <li>fgdsdfghfhgd</li>-->
-            </ul>
+            </table>
         </div>
-        <button class='btsortear btn'>Sortear!</button>
+        <button class='btsortear btn btn1'>Sortear!</button>
+        
         <div class='winner-div'>
-            <h1 class='winner-title'>Comentario sorteado:</h1>
+            <h1 class='winner-title'><!--Comentario sorteado:--></h1>
             <div class='winner-area scroll'>
                 <!--<div class='winner-box'><b>usuario:</b> Um comentario de exemplo! </div>-->
             </div>
@@ -34,5 +38,6 @@
     <!--<div class='layout-background'></div>
     <div class='colortransition-object'></div>-->
 </div>
+<script src='./js/export_table.js'></script>
 <script src='./js/loadcomments.js'></script>
 <script src='./js/sorteioscript.js'></script>

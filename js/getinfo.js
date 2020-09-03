@@ -70,13 +70,16 @@ https://www.instagram.com/graphql/query/?query_id=17888483320059182&id=USERID&fi
            }
            selected=postid;
            $(`#${postid}`).find("img").css('opacity','.7')
+           var a=$(`#${postid}`).find(".photoinfo").innerHTML
+           var a=$(`#2195215986062589920`).find(".photoinfo").text()
+           
            $(`#info-${postid}`).append('<button onclick="loadsorteio(`'+shortcode+'`,`'+postid+'`)" class="btn btn-light btselect-confirm">Escolher</button>')
            
        }
        
        function loadsorteio(shortcode,postid){
             console.log(`foto: shortcode= ${shortcode} , id= ${postid} selecionada...`)
-            window.post_link=$(`#${postid}`).find("img").attr('src')
+            window.post_link=$(`#${postid}`).attr('urlid')
             console.log(window.post_link)
             window.shortcode=shortcode
             window.postid=postid

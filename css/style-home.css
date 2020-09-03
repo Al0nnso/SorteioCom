@@ -11,14 +11,17 @@ html,body{
     color: #242540;
 }*/.sorteio-area{
     /*background-image: url(../img/background-flow.jpg) ;*/
-    background-color: bisque;
+    background-color: #01B463;
+    -webkit-box-shadow: inset 0px 0px 150px 60px #009367;
+    -moz-box-shadow: inset 0px 0px 150px 60px #009367;
+    box-shadow: inset 0px 0px 150px 60px #009367;
     width: 100%;
     height: 100%;
 }.header-menu{
     top: 0px;
     padding: 20px 10px;
     overflow: hidden;
-    background-color: pink;
+    /*background-color: pink;*/
 }.layout-area{
     top: 90px;
     position: absolute;
@@ -31,14 +34,58 @@ html,body{
     padding: 12px;
     width: 300px;
 }.login{
+    /*visibility: hidden;*/
     float: right;
     padding: 12px;
     width: 150px;
     height: 70px;
     font-weight: bold;
     font-size: 15pt;
+    z-index: 3;
     /*font-size: 20pt;
     background-color: transparent;*/
+}.box-info{
+    position: absolute;
+    background-color: #1F203F;
+    box-shadow: rgba(0, 0, 0, 0.384) 10px 10px;
+   /* height: 100%;*/
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: whitesmoke;
+    font-size: 11pt;
+    right: 30px;
+    z-index: 10;
+}footer{
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    bottom: 0px;
+    /*background-color: bisque;*/
+    padding: 30px;
+}.move3d{
+    transform-style: preserve-3d;
+    -moz-transform:  scale(1) translateX(-50%) translateY(-50%) perspective(200cm) rotateX(-15deg) rotateY(15deg);
+   -webkit-transform:  scale(1) translateX(-50%) translateY(-50%) perspective(200cm) rotateX(-15deg) rotateY(15deg);
+   transform:  scale(1) translateX(-50%) translateY(-50%) perspective(200cm) rotateX(-0deg) rotateY(15deg);
+}.box-premium{
+    margin-top: 10px;
+    position: absolute;
+    left: 50px;
+    color: whitesmoke;
+    transition: all .5s;
+    background-color: #1F203F;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}.box-premium:hover{
+    /*color: #009367;*/
+    transform: scale(1.1);
+}.box-premium h1{
+    font-size: 24pt;
+    line-height: 50px;
 }
 
 @media screen and (min-width:768px){
@@ -59,7 +106,7 @@ html,body{
     }*/
 }
 
-@media all and (max-width:600px){
+@media all and (max-width:767px){
     /*Smartphone*/
     /*.header-menu{
         position: absolute;

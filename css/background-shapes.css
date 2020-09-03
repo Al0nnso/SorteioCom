@@ -1,0 +1,37 @@
+.shapes{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+    /*visibility: hidden;*/
+}#s1{
+
+    position: fixed;
+    right: -90px;
+    z-index: 1;
+}#s2{
+
+    position: fixed;
+    left: -50px;
+}#s3{
+
+    position: fixed;
+    right: 0px;
+}#s4{
+    position: fixed;
+    z-index: 1;
+    top: -90px;
+    left: -100px;
+}#s5{
+
+    position: fixed;
+    z-index: 1;
+    left: -80px;
+    bottom: -140px;
+}#s6{
+    position: fixed;
+    z-index: 1;
+    right: -10px;
+}

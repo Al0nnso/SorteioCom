@@ -38,9 +38,13 @@ html,body{
     text-align: center;
     font-weight: bold;
     color: #242540;
-}.postimg{
-    background-color: #f2f2f2;
+}.photopreview{
+    width:150px;
+    height:150px;
+    background-size: 150px;
     border-radius: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }.photoinfo{
     position: absolute;
     top: 90%;
@@ -110,9 +114,10 @@ html,body{
         font-size: 22pt;
     }.posts-icon{
         font-size: 17pt;
-    }.postimg{
+    }.photopreview{
         width: 150px;
         height: 150px;
+        background-size: 150px;
     }
 }
 
@@ -155,9 +160,10 @@ html,body{
         font-size: 16pt;
     }.posts-icon{
         font-size: 13pt;
-    }.postimg{
+    }.photopreview{
         width: 100px;
         height: 100px;
+        background-size: 100px;
     }.btselect-confirm{
         font-size: 9pt;
     }.photoinfo{

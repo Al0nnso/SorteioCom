@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src='./js/jquery.js'></script>
+    <script src='./js/imports/jquery.js'></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--<link rel='stylesheet' type='text/css' href="./css/style.css">-->
     <link rel='stylesheet' type='text/css' href="./css/style-home.css">
     <link rel='stylesheet' type='text/css' href="./css/publicstyle.css">
+    <link rel='stylesheet' type='text/css' href="./css/background-shapes.css">
     
     <!--
     <link rel='stylesheet' type='text/css' href="./css/button.css">
@@ -22,51 +23,49 @@
     <title>SORTEIOCOM</title>
 </head>
 <body>
+
+
+
     <div class='sorteio-area'>
-         <div
-          class="fb-like"
-          data-share="true"
-          data-width="450"
-          data-show-faces="true">
-        </div>
+      <div class='shapes noselect'>
+        <img id='s1'src='./img/background/shape1.png'>
+        <img id='s2'src='./img/background/shape2.png'>
+        <img id='s3'src='./img/background/shape3.png'>
+        <img id='s4' src='./img/background/shape4.png'>
+        <img id='s5' src='./img/background/shape5.png'>
+        <img id='s6' src='./img/background/shape6.png'>
+      </div>
             <div class='header-menu'>
                 <img src="./img/logo1.png" class='logo'>
                 <button onClick='' class='login btn btn-outline-light'>LOGIN</button>
             </div>
 
             <div class='layout-area'>
-                <!--
+                <!--tjtc 
                     layout-1.html
                     layout-2.hmtl
                     layout-3.html
                 -->
             </div>
+            <footer>
+              <div class='box-premium noselect' onclick=go_premium()>
+                <h1>Seja premium!</h1>
+              </div>
+              <div class='box-info font'>
+                Olá, o site está em beta test, por isso o limite de sorteio é temporariamente de <b>9mil comentários</b>
+            </div>
+            </footer>
     </div>
+    ]
     <!--<div class='premium-area'></div>-->
 
     <script src='./js/getinfo.js'></script>
     <script src='./js/loadpage.js'></script>
     <script>
-    $(".layout-area").load('layout-1.html');  
-    </script>
-    
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '2313410648763367',
-          xfbml      : true,
-          version    : 'v5.0'
-        });
-        FB.AppEvents.logPageView();
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
+      function go_premium(){
+        window.location.replace("premium-layout.html");
+      }
+    $(".layout-area").load('layout-1.html');
     </script>
 
 <!--
