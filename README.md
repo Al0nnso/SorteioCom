@@ -19,7 +19,8 @@ All app functions
 - 📊 **Download excel table**
 
 ## Run
-> The html layout load is blocked by the CORS you need to run on firefox or live server to work
+> The html aditional layouts load is blocked by the CORS you need to run on **firefox or live server to work**  
+> Ex: 127.0.0.1/index.html
 - **Start index.html**
 - Using instagram **__a=1** API to load
 - The API not load too much comments
