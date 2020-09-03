@@ -9,8 +9,8 @@
 <p align="center">A website app to make instagram giveaways</p>
 
 <p align="center">
-  <img src="/docs/home.png" width=440 title="Login">
-  <img src="/docs/sorteio.png" width=440 title="Login">
+  <img src="/docs/home.png" width=400 title="Login">
+  <img src="/docs/sorteio.png" width=400 title="Login">
 </p>
 
 ## Features
